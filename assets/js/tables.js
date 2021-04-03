@@ -26,7 +26,7 @@ $(document).ready(function(){
     $(".btn").click(function(){
     	var ctx = document.getElementById('bar-chart');
 		console.log("~~> ctx1 : ", ctx);
-		new Chart(document.getElementById(ctx), {
+		new Chart(ctx, {
 			type: 'bar',
 			data: {
 				labels: ['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Aug','Sep','Oct','Nov','Des'],
