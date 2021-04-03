@@ -38,7 +38,6 @@ $(document).ready(function(){
     $(".btn").click(function(e){
 		var dataID = e.currentTarget.attributes["data-id"].value
 		var ctx = document.getElementById('bar-chart');
-		console.log("~~> ctx2 : ", ctx);
 		new Chart(ctx, {
 			type: 'bar',
 			data: {
