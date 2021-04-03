@@ -14,22 +14,22 @@ $(document).ready(function(){
 	];
 
 	/*CHART*/
-	// new Chart(document.getElementById("bar-chart"), {
-	// 	type: 'bar',
-	// 	data: {
-	// 		labels: ['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Aug','Sep','Oct','Nov','Des'],
-	// 		datasets: [{
-	// 			backgroundColor: "#3e95cd",
-	// 			data: [300, 140, 345, 478, 568, 876, 793, 934, 131, 120, 123, 90]
-	// 		}]
-	// 	},
-	// 	options: {
-	// 		legend: { display: false },
-	// 		title: {
-	// 			display: true
-	// 		}
-	// 	}
-	// });
+	new Chart(document.getElementById("bar-chart"), {
+		type: 'bar',
+		data: {
+			labels: ['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Aug','Sep','Oct','Nov','Des'],
+			datasets: [{
+				backgroundColor: "#3e95cd",
+				data: [300, 140, 345, 478, 568, 876, 793, 934, 131, 120, 123, 90]
+			}]
+		},
+		options: {
+			legend: { display: false },
+			title: {
+				display: true
+			}
+		}
+	});
 	/*END CHART*/
 
 	dataTable.forEach(function(data) {
