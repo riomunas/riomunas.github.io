@@ -33,6 +33,7 @@ $(document).ready(function(){
 	/*END CHART*/
 
 	dataTable.forEach(function(data) {
+		console.log("asdfasdfasdf asdfasdfas fasdfasdf");
 		$("#mytable > tbody").append(
 			'<tr>'+
 			'<td scope="row">'+data.item+'</td>'+
