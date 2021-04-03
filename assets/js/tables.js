@@ -25,7 +25,7 @@ $(document).ready(function(){
 
     $(".btn").click(function(){
     	var ctx = document.getElementById('bar-chart');
-		console.log("~~> ctx1 : ", ctx);
+		console.log("~~> ctx2 : ", ctx);
 		new Chart(ctx, {
 			type: 'bar',
 			data: {
