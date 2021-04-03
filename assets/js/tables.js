@@ -15,7 +15,9 @@ $(document).ready(function(){
 
 	/*CHART*/
 	(function() {
-		new Chart(document.getElementById("bar-chart"), {
+		var ctx = document.getElementById('bar-chart');
+		console.log("~~> ctx : ", ctx);
+		new Chart(document.getElementById(ctx), {
 			type: 'bar',
 			data: {
 				labels: ['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Aug','Sep','Oct','Nov','Des'],
