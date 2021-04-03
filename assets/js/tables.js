@@ -13,9 +13,18 @@ $(document).ready(function(){
 		{'item':'Restoran dan Rumah Makan', 'id':'202110'},
 	];
 
-	/*CHART*/
-	(function() {
-		var ctx = document.getElementById('bar-chart');
+	dataTable.forEach(function(data) {
+		console.log("asdfasdfasdf asdfasdfas fasdfasdf");
+		$("#mytable > tbody").append(
+			'<tr>'+
+			'<td scope="row">'+data.item+'</td>'+
+			'<td><a href="#!" class="btn btn-sm btn-primary">Lihat Chart</a></td>'+
+			'</tr>'
+		);
+	});
+
+    $(".btn").click(function(){
+    	var ctx = document.getElementById('bar-chart');
 		console.log("~~> ctx1 : ", ctx);
 		new Chart(document.getElementById(ctx), {
 			type: 'bar',
@@ -33,20 +42,6 @@ $(document).ready(function(){
 				}
 			}
 		});
-	})()
-	/*END CHART*/
-
-	dataTable.forEach(function(data) {
-		console.log("asdfasdfasdf asdfasdfas fasdfasdf");
-		$("#mytable > tbody").append(
-			'<tr>'+
-			'<td scope="row">'+data.item+'</td>'+
-			'<td><a href="#!" class="btn btn-sm btn-primary">Lihat Chart</a></td>'+
-			'</tr>'
-		);
-	});
-
-    $(".btn").click(function(){
         $("#myModal").modal('show');
     });
 });
