@@ -16,7 +16,7 @@ $(document).ready(function(){
 	/*CHART*/
 	(function() {
 		var ctx = document.getElementById('bar-chart');
-		console.log("~~> ctx : ", ctx);
+		console.log("~~> ctx1 : ", ctx);
 		new Chart(document.getElementById(ctx), {
 			type: 'bar',
 			data: {
